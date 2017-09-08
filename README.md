@@ -2,6 +2,12 @@
 
 > A Vue.js project
 
+## Start
+
+``` bash
+$ yarn && yarn dev+mock
+```
+
 ## Build Setup
 
 ``` bash
