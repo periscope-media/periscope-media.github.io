@@ -1,0 +1,1 @@
+export const MUT_RESOURCE = 'MUT_RESOURCE'
