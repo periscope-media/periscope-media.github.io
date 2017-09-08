@@ -1,0 +1,12 @@
+{
+  "some-resources": [
+    {
+      "rid": 0,
+      "rname": "some resource"
+    },
+    {
+      "rid": 1,
+      "rname": "some more resource"
+    }
+  ]
+}
