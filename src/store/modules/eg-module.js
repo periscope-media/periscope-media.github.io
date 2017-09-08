@@ -25,7 +25,6 @@ const actions = {
   }
 }
 
-
 const mutations = {
   [types.MUT_RESOURCE] (state, resource) {
     // state['pages'] = resource.headers.get('x-total-count')
