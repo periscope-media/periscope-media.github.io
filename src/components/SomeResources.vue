@@ -104,7 +104,7 @@
       async fetch () {
         this.busy = true
         await this.fetchResource({
-          url: 'http://periscope-news.herokuapp.com/api/v2/news',
+          url: 'https://periscope-news.herokuapp.com/api/v2/news',
           prop: 'newsResources'
         })
         this.busy = false
