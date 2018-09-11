@@ -10,13 +10,13 @@
           <div class="message-body">
             <b-tabs v-model="activeTab">
               <b-tab-item label="Curated News">
-                <div class="card">
+                <div class="card" v-if="!busy">
                   <!-- <div class="card-image">
                     <figure class="image">
                       <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
                     </figure>
                   </div> -->
-                  <div class="card-content" v-for="newsResource in newsResources">
+                  <div class="card-content" v-for="(newsResource, index) in newsResources" :key="index">
                     <div class="media">
                       <div class="media-left">
                         <figure class="image is-200x200">
@@ -31,13 +31,14 @@
 
                     <div class="content">
                       <span>by</span> <a>@{{ newsResource.author }}</a>
-                      <span>via</span> <a href="#">#css</a> <a :href="newsResource.url">{{ newsResource.url }}</a>
+                      <span>via</span> <a :href="newsResource.url">{{ newsResource.url }}</a>
                       <br>
                       <span>published at</span> <time :datetime="getDate(newsResource.published)">{{ getPrettyDate(newsResource.published) }}</time>
                       <span>found at</span> <time :datetime="getDate(newsResource.found)">{{ getPrettyDate(newsResource.found) }}</time>
                     </div>
                   </div>
                 </div>
+                <i class="fas fa-redo fa-spin" style="font-size:150px;opacity:.25;" v-else></i>
               </b-tab-item>
               <b-tab-item label="Debug">
                 <b-table :data="newsResources">
@@ -83,6 +84,7 @@
     name: 'some-resources',
     data () {
       return {
+        busy: false,
         activeTab: 0
       }
     },
