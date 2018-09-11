@@ -1,4 +1,4 @@
-# eg-vuex-module
+# periscope-news
 
 > A Vue.js project
 
