@@ -208,7 +208,7 @@
         for (let i = 0; i < l; i++) {
           try {
             await this.recordNewsStory({
-              url: 'http://localhost:5000/api/v2/news',
+              url: 'https://periscope-news.herokuapp.com/api/v2/news',
               body: {
                 title: this.newsStorys[i].title,
                 description: this.newsStorys[i].description,
@@ -232,7 +232,7 @@
         this.busy = true
         try {
           await this.recordNewsStory({
-            url: 'http://localhost:5000/api/v2/news',
+            url: 'https://periscope-news.herokuapp.com/api/v2/news',
             body: {
               title: this.title,
               description: this.description,
@@ -254,7 +254,7 @@
         this.busy = true
         try {
           await this.authenticate({
-            url: 'http://localhost:5000/api/v2/authenticate',
+            url: 'https://periscope-news.herokuapp.com/api/v2/authenticate',
             body: {
               username: this.username,
               password: this.password
@@ -271,7 +271,7 @@
       async fetch () {
         this.busy = true
         await this.fetchResource({
-          url: 'http://localhost:5000/api/v2/news',
+          url: 'https://periscope-news.herokuapp.com/api/v2/news',
           prop: 'newsResources'
         })
         this.busy = false
