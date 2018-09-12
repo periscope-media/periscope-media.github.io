@@ -12,7 +12,6 @@
 </script>
 
 <style>
-  @import "~buefy/lib/buefy.css";
   @import "~bulma/css/bulma.css";
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
