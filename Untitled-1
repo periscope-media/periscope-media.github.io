@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Are Periscope endpoints secure?",
+    "description": "This is a test to see is the endpoints at Periscope's RESTful API are open to the public, or secured with an OAuth2 workflow.",
+    "author": "braun",
+    "url": "localhost:8080/#/some-resources",
+    "image": "https://picsum.photos/100/102/?random",
+    "published": 1536771440885,
+    "found": 1536771440885
+  },
+  {
+    "title": "Security not the question, nor the answer",
+    "description": "Right now is a fragile time for Periscope Media as their news API is about to roll out how do they plan on securing their User eXperience?",
+    "author": "Periscope Engineer",
+    "url": "http://localhost:8080/#/some-resources",
+    "image": "https://picsum.photos/100/103/?random",
+    "published": 1536771598636,
+    "found": 1536771598636
+  },
+  {
+    "title": " Hurricane Florence diameter between Katrina and Harvey",
+    "description": "The US Atlantic Coasts' GOES-East Satellite imagery revealing a 500-mile in diameter hurricane Florence. A storm that hasn't hit land yet, but is already almost the size of the most costliest disaster to hit not mainland.",
+    "author": "Periscope Engineer",
+    "url": "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/eus/GEOCOLOR/20182552317_GOES16-ABI-eus-GEOCOLOR-2001x2000.jpg",
+    "image": "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/eus/GEOCOLOR/20182552317_GOES16-ABI-eus-GEOCOLOR-2001x2000.jpg",
+    "published": 1536791077235,
+    "found": 1536791077235
+  },
+  {
+    "title": "With maximum sustained winds, Florence is a category 4 hurricane",
+    "description": "Still over the Atlantic, the storm has yet to reach inland. It's due to strike on Thursday.",
+    "author": "Periscope Engineer",
+    "url": "https://www.nesdis.noaa.gov/content/hurricane-imagery",
+    "image": "https://www.nesdis.noaa.gov/sites/default/files/20180912-HURFlorenceGCe.jpg",
+    "published": 1536799727266,
+    "found": 1536799727266
+  },
+  {
+    "title": "Hurricane Florence, 'storm of a lifetime,' generating 83-foot high waves as it barrels towards Carolina coast",
+    "description": "Wave heights to 83 ft were measured early this morning under the NE quadrant of Hurricane Florence. These enormous waves are produced by being trapped along with very strong winds moving in the same direction the storm's motion. ",
+    "author": "@NHC_TAFB",
+    "url": "https://twitter.com/NHC_TAFB/status/1039882107399622657?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1039882107399622657%7Ctwgr%5E373939313b636f6e74726f6c&ref_url=http%3A%2F%2Fwww.foxnews.com%2Fus%2F2018%2F09%2F12%2Fhurricane-florence-storm-lifetime-generating-83-feet-high-waves-as-it-barrels-towards-carolina-coast.html",
+    "image": "https://pbs.twimg.com/media/Dm5nPAVUcAQe-kG.jpg",
+    "published": "7:23 AM - 12 Sep 2018",
+    "found": 1536803655359
+  }
+]

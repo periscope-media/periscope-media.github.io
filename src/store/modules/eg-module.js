@@ -2,6 +2,7 @@ import api from '../../api/eg-api'
 import * as types from '../mutation-types'
 
 const state = {
+  dumpResources: [],
   recordNewsStorysResources: [],
   recordNewsStoryResources: [],
   authorizationResources: [],
@@ -10,6 +11,7 @@ const state = {
 }
 
 const getters = {
+  dumpResources: state => state.dumpResources,
   authorization: state => state.authorization,
   recordNewsStorys: state => state.recordNewsStorys,
   recordNewsStory: state => state.recordNewsStory,
@@ -79,7 +81,6 @@ const mutations = {
     state['authorization'] = authorization
   },
   [types.MUT_RESOURCE] (state, resource) {
-    // state['pages'] = resource.headers.get('x-total-count')
     if (resource.additive) {
       state[resource.prop] = [...state[resource.prop], ...resource.body]
     } else {

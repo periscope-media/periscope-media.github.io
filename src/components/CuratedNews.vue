@@ -5,21 +5,21 @@
       <div class="media">
         <div class="media-left">
           <figure class="image is-200x200">
-            <img :src="newsResource.image" alt="Placeholder image">
+            <img :src="newsResource.nimage" style="height:100px;width:100px;" alt="Placeholder image">
           </figure>
         </div>
         <div class="media-content">
-          <p class="title is-1">{{ newsResource.title }}</p>
-          <p class="subtitle is-2">{{ newsResource.description }}</p>
+          <p class="title is-1">{{ newsResource.ntitle }}</p>
+          <p class="subtitle is-2">{{ newsResource.ndescription }}</p>
         </div>
       </div>
 
       <div class="content">
-        <span>by</span> <a>@{{ newsResource.author }}</a>
-        <span>via</span> <a :href="newsResource.url">{{ newsResource.url }}</a>
+        <span>by</span> <a>@{{ newsResource.nauthor }}</a>
+        <span>via</span> <a :href="newsResource.nurl">{{ newsResource.nurl }}</a>
         <br>
-        <span>published at</span> <time :datetime="getDate(newsResource.published)">{{ getPrettyDate(newsResource.published) }}</time>
-        <span>found at</span> <time :datetime="getDate(newsResource.found)">{{ getPrettyDate(newsResource.found) }}</time>
+        <span>published at</span> <time :datetime="getDate(newsResource.npublished)">{{ getPrettyDate(newsResource.npublished) }}</time>
+        <span>found at</span> <time :datetime="getDate(newsResource.nfound)">{{ getPrettyDate(newsResource.nfound) }}</time>
       </div>
     </div>
   </div>
